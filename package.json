@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Basic Travis configuration for JavaScript projects",
   "scripts": {
-    "test": "mocha \"test/**/*_spec.js\""
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc --reporter=html --reporter=text mocha \"test/**/*_spec.js\""
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,8 @@
   },
   "homepage": "https://github.com/dubzzz/basictravisjavascript#readme",
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "coveralls": "^3.0.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
   }
 }
