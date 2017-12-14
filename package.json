@@ -1,0 +1,21 @@
+{
+  "name": "basictravisjavascript",
+  "version": "1.0.0",
+  "description": "Basic Travis configuration for JavaScript projects",
+  "scripts": {
+    "test": "mocha \"test/**/*_spec.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubzzz/basictravisjavascript.git"
+  },
+  "author": "Nicolas DUBIEN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dubzzz/basictravisjavascript/issues"
+  },
+  "homepage": "https://github.com/dubzzz/basictravisjavascript#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
